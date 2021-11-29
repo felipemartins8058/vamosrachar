@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         valorConta.setSelectAllOnFocus(true)
         totalPessoas.setSelectAllOnFocus(true)
 
-        totalPessoas.addTextChangedListener {
+        totalPessoas.setOnClickListener {
             val val1 = valorConta.text.toString().toFloat()
             val val2 = totalPessoas.text.toString().toInt()
 
@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             valorDivido.text = result.toString()
         }
 
-        valorConta.addTextChangedListener {
+        valorConta.setOnClickListener {
             val val1 = valorConta.text.toString().toFloat()
             val val2 = totalPessoas.text.toString().toInt()
 
