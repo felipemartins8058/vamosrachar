@@ -24,14 +24,15 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
-        android:layout_width="360dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:autofillHints="0"
         android:backgroundTint="#FAF4F4"
         android:ems="10"
         android:inputType="number"
         android:minHeight="48dp"
         android:outlineAmbientShadowColor="#000000"
-        android:text="@string/_valor1"
+        android:text="@string/valor1"
         android:textColor="#EF9A9A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,19 +41,18 @@
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.137"
         tools:ignore="DuplicateSpeakableTextCheck"
-        tools:text="0"
-        android:autofillHints="0" />
+        tools:text="0" />
 
     <EditText
         android:id="@+id/editTextTextPersonName4"
-        android:layout_width="360dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:autofillHints="0"
         android:backgroundTint="#F4F4F4"
         android:ems="10"
         android:inputType="number"
         android:minHeight="48dp"
-        android:text="@string/_valor2"
+        android:text="@string/valor2"
         android:textColor="#EF9A9A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -102,10 +102,10 @@
         android:text="@string/compartilhar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintHorizontal_bias="0.353"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.099" />
+        app:layout_constraintVertical_bias="0.009" />
 
     <Button
         android:id="@+id/button2"
@@ -115,18 +115,19 @@
         android:text="@string/falar_valor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.323"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.135" />
+        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:labelFor="@id/editTextTextPersonName3"
         android:text="@string/valor_da_conta"
         android:textColor="#FFFFFF"
+        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.078"
@@ -136,11 +137,12 @@
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:labelFor="@id/editTextTextPersonName4"
         android:text="@string/quantidade_de_pessoas"
         android:textColor="#FFFFFF"
+        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.094"

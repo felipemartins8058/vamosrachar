@@ -13,11 +13,14 @@ import java.util.*
 
 class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
+
     private var tts: TextToSpeech? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
 
         val valorDivido = findViewById<TextView>(R.id.textView3)
         val speakBtn = findViewById<Button>(R.id.button2)
@@ -34,7 +37,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         valorConta.setSelectAllOnFocus(true)
         totalPessoas.setSelectAllOnFocus(true)
 
-        totalPessoas.setOnClickListener {
+        totalPessoas.addTextChangedListener {
             val val1 = valorConta.text.toString().toFloat()
             val val2 = totalPessoas.text.toString().toInt()
 
@@ -43,7 +46,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             valorDivido.text = result.toString()
         }
 
-        valorConta.setOnClickListener {
+        valorConta.addTextChangedListener {
             val val1 = valorConta.text.toString().toFloat()
             val val2 = totalPessoas.text.toString().toInt()
 

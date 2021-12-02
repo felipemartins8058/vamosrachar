@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lets Creck!</string>
+    <string name="app_name">Welcome to Lets Creck!</string>
     <string name="lets_creck">Lets Creck!</string>
-    <string name="_valor1">0.00</string>
-    <string name="_valor2">0</string>
+    <string name="valor1">0.00</string>
+    <string name="valor2">0</string>
     <string name="rs">$</string>
-    <string name="valor3">0,00</string>
+    <string name="valor3">xx</string>
     <string name="compartilhar">Share</string>
     <string name="falar_valor">Speak value</string>
-    <string name="valor_da_conta">Valor da conta</string>
-    <string name="quantidade_de_pessoas">Quantidade de pessoas</string>
+    <string name="valor_da_conta">Total Price</string>
+    <string name="quantidade_de_pessoas">Total People</string>
 </resources>
